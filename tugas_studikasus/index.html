@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="icon" href="">
+
+
+</head>
+<body>
+    <div class="container_isi">
+        <img src="aliSukses.jpg" alt="fotosaya" class="fotoSaya">
+        <p class="saya">
+            <?phpALI RAHMAN BAYANAKA | 102022400053 | FRI | S1 SISTEM INFORMASI
+            ?>
+        </p>
+        <p id="clock" class="waktuString"></p>
+        <script>
+            function updateTime(){
+                const sekarang = new Date();
+                let jam = sekarang.getHours();
+                let menit = sekarang.getMinutes();
+                let detik = sekarang.getSeconds();
+                jam = jam <10 ? '0' + jam:jam;
+                menit = menit < 10 ? '0' + menit:menit;
+                detik = detik < 10 ? '0' + detik:detik;
+                const waktuString = `${jam}:${menit}:${detik}`;
+                document.getElementById('clock').innerText = waktuString;
+
+            }
+            updateTime();
+            setInterval(updateTime,1000);
+        </script>
+        <div class="sosmed">
+            <a href="https://x.com" target="_blank" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://github.com/alirahman-mit" target="_blank" title="Github"><i class="bi bi-github"></i></a>
+            <a href="https://instagram.com/alibynka__/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+</body>
+
+</body>
+</html>
