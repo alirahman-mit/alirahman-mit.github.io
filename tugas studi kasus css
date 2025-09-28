@@ -1,0 +1,79 @@
+.fotoSaya {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px; 
+}
+.fotoSaya img{
+    border: 5px solid rgb(0, 109, 109);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+.fotoSaya {
+    transition: transform 1.5s;
+}
+.fotoSaya:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+.container_isi {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.sosmed {
+    display: flex;
+    gap: 15px; 
+    margin-top: 20px;
+}
+.sosmed a {
+    display: inline-block;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: rgb(35, 218, 193);
+    margin: 10px;
+    background-color: rgb(14, 122, 122);
+    text-decoration: none;
+    transition: transform 1s, background-color 0.3s, color 0.3s;
+}
+.sosmed a:hover {
+    color: white;
+    transform: translateY(-10px); 
+    background-color: rgb(4, 216, 216);
+}
+.saya {
+    display: inline-block;
+    background-color: rgb(0, 109, 109);
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: rgb(51, 230, 230);
+}
+body{
+    background:  url(japan-background-digital-art.jpg);
+    background-size: cover ;
+}
+
+.waktuString {
+    display: inline-block;
+    background-color: rgb(0, 109, 109);
+    border-radius: 20%;
+    padding: 10px 15px;
+    font-family: italic;
+    font-weight: bold;
+    color: rgb(73, 213, 237);
+    transition: transform 1s, box-shadow 0.3s, background-color 1.5s, color 1s;
+}
+.waktuString:hover{
+    color: white;
+    background-color: rgb(40, 127, 241);
+    transform: scale(1.1) rotate(90deg);
+}
+
